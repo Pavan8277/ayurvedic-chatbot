@@ -22,7 +22,7 @@ except RuntimeError:
 # Load API key safely
 # -----------------------------
 load_dotenv()
-api_key = os.getenv("GOOGLE_API_KEY")
+api_key = os.getenv("API_KEY")
 if not api_key:
     raise ValueError("❌ API_KEY not found. Set it in Render environment variables.")
 os.environ["GOOGLE_API_KEY"] = api_key
